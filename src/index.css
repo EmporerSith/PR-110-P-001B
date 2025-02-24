@@ -1,4 +1,13 @@
+@font-face {
+  font-family: Spotify;
+  src: url("../src/assets/fonts/SpotifyMix-Regular.ttf");
+}
+
 @import "tailwindcss";
+
+body {
+  font-family: "Spotify", sans-serif;
+}
 
 ::-webkit-scrollbar {
   display: none;
