@@ -57,22 +57,28 @@ const PlayerContextProvider = (props) => {
   };
 
   useEffect(() => {
-    setTimeout(() => {
-      audioRef.current.ontimeupdate = () => {
-        seekBar.current.style.width =
-          Math.floor((audioRef.current.currentTime / audioRef.current.duration) * 100) + "%";
+    const updateTime = () => {
+      if (audioRef.current && !isNaN(audioRef.current.duration)) {
         setTime({
           currentTime: {
-            second: Math.floor(audioRef.current.currentTime % 60),
-            minute: Math.floor(audioRef.current.currentTime / 60),
+            second: String(Math.floor(audioRef.current.currentTime % 60) || 0).padStart(2, "0"),
+            minute: Math.floor(audioRef.current.currentTime / 60) || 0,
           },
           totalTime: {
-            second: Math.floor(audioRef.current.duration % 60),
-            minute: Math.floor(audioRef.current.duration / 60),
+            second: String(Math.floor(audioRef.current.duration % 60) || 0).padStart(2, "0"),
+            minute: Math.floor(audioRef.current.duration / 60) || 0,
           },
         });
-      };
-    }, 1000);
+
+        seekBar.current.style.width =
+          Math.floor((audioRef.current.currentTime / audioRef.current.duration) * 100) + "%";
+      }
+    };
+
+    if (audioRef.current) {
+      audioRef.current.ontimeupdate = updateTime;
+      audioRef.current.onloadedmetadata = updateTime; // Trigger update on metadata load
+    }
   }, [audioRef]);
 
   const contextValue = {
