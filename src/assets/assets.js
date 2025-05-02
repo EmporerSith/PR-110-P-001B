@@ -22,15 +22,16 @@ import arrow_right from "./right_arrow.png";
 import arrow_left from "./left_arrow.png";
 import spotify_logo from "./spotify_logo.png";
 import clock_icon from "./clock_icon.png";
-import img1 from "./img1.jpg";
-import img2 from "./img2.jpg";
-import img3 from "./img3.jpg";
-import img4 from "./img4.jpg";
-import img5 from "./img5.jpg";
-import img6 from "./img6.jpg";
-import img7 from "./img7.jpg";
-import img8 from "./img8.jpg";
-import img9 from "./img9.jpg";
+import nimg1 from "./nimg1.jpg";
+import nimg2 from "./nimg2.jpg";
+import nimg3 from "./nimg3.jpg";
+import nimg4 from "./nimg4.jpg";
+import nimg5 from "./nimg5.jpg";
+import nimg6 from "./nimg6.jpg";
+import nimg7 from "./nimg7.jpg";
+import nimg8 from "./nimg8.jpg";
+import nimg9 from "./nimg9.jpg";
+import nimg10 from "./nimg10.jpg";
 import img10 from "./img10.jpg";
 import img11 from "./img11.jpg";
 import img12 from "./img12.jpg";
@@ -44,6 +45,8 @@ import song3 from "./song3.mp3";
 import song4 from "./song4.mp3";
 import song5 from "./song5.mp3";
 import song6 from "./song6.mp3";
+import song7 from "./song7.mp3";
+import song8 from "./song8.mp3";
 
 export const assets = {
   bell_icon,
@@ -76,14 +79,14 @@ export const albumsData = [
   {
     id: 0,
     name: "Top 50 Global",
-    image: img8,
+    image: nimg8,
     desc: "Your weekly update of the most played tracks",
     bgColor: "#2a4365",
   },
   {
     id: 1,
-    name: "Top 50 India",
-    image: img9,
+    name: "Top 50 Indonesia",
+    image: nimg9,
     desc: "Your weekly update of the most played tracks",
     bgColor: "#22543d",
   },
@@ -120,66 +123,66 @@ export const albumsData = [
 export const songsData = [
   {
     id: 0,
-    name: "Song One",
-    image: img1,
+    name: "On & On",
+    image: nimg1,
     file: song1,
-    desc: "Put a smile on your face with these happy tunes",
+    desc: "Cartoon, Daniel Levi",
     duration: "3:28",
   },
   {
     id: 1,
-    name: "Song Two",
-    image: img2,
+    name: "DISCONNECTED",
+    image: nimg2,
     file: song2,
-    desc: "Put a smile on your face with these happy tunes",
+    desc: "Chase Atlantic",
     duration: "4:10",
   },
   {
     id: 2,
-    name: "Song Three",
-    image: img3,
+    name: "Die for Me",
+    image: nimg3,
     file: song3,
-    desc: "Put a smile on your face with these happy tunes",
+    desc: "Chase Atlantic",
     duration: "3:26",
   },
   {
     id: 3,
-    name: "Song Four",
-    image: img4,
+    name: "I've Been",
+    image: nimg4,
     file: song4,
-    desc: "Put a smile on your face with these happy tunes",
+    desc: "Tory Lanez",
     duration: "2:43",
   },
   {
     id: 4,
-    name: "Song Five",
-    image: img5,
+    name: "Skill Issues",
+    image: nimg5,
     file: song5,
-    desc: "Put a smile on your face with these happy tunes",
+    desc: "brianjcb",
     duration: "3:10",
   },
   {
     id: 5,
-    name: "Song Six",
-    image: img14,
+    name: "Options",
+    image: nimg6,
     file: song6,
-    desc: "Put a smile on your face with these happy tunes",
+    desc: "Daniel Di Angelo",
     duration: "2:45",
   },
   {
     id: 6,
-    name: "Song Seven",
-    image: img7,
-    file: song1,
-    desc: "Put a smile on your face with these happy tunes",
-    duration: "2:18",
+    name: "Into It",
+    image: nimg7,
+    file: song7,
+    desc: "Chase Atlantic",
+    duration: "3:16",
   },
   {
     id: 7,
-    name: "Song Eight",
-    image: img12,
-    file: song2,
-    desc: "Put a smile on your face with these happy tunes",
-    duration: "2:35",
+    name: "Matushka Ultrafunk",
+    image: nimg10,
+    file: song8,
+    desc: "satirin",
+    duration: "2:24",
   },
 ];
